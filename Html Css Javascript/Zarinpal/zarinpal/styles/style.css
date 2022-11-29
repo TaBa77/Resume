@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 55px;
+}
+
+/* navbar */
+
+#navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    font-family: YekanBakhMedium;
+    font-size: 14px;
+    color: #303030;
+    height: 6rem;
+    background: #FFFFFFB8;
+}
+
+nav {
+    display: fixed;
+}
+
+#hamberger-drop {
+    display: none;
+}
+
+#logo {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+#buttons {
+    display: flex;
+}
+
+#buttons li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+}
+
+#buttons li img {
+    height: 7px;
+    padding-right: 10px;
+}
+
+#myzarinpal {
+    padding: 0 30px 0 17px;
+}
+
+#myzarinpal button {
+    border: none;
+    font-family: YekanBakhBold;
+    font-size: 14px;
+    color: #284578;
+    background-color: #E8EFFE99;
+    padding: 10px 27px;
+    border-radius: 20px;
+}
+
+#products-drop,
+#more-drop {
+    position: absolute;
+    display: none;
+    grid-template-columns: repeat(2, auto);
+    top: 70px;
+    background-color: white;
+    border-top: 5px solid yellow;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#products-drop div,
+#more-drop div {
+    padding: 10px;
+}
+
+#products-drop div p:first-child {
+    font-family: iranyekanwebmedium;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+#products-drop div p:last-child {
+    font-family: iranyekanwebmedium;
+    font-size: 10px;
+}
+
+/* banner */
+#banner {
+    display: flex;
+    background: linear-gradient(135deg, #21254e, #2b4a83);
+    padding: 130px 70px 70px 85px;
+    border-radius: 20px;
+}
+
+#banner-text {
+    color: white;
+    line-height: 40px;
+}
+
+#banner-text p:first-child {
+    font-size: 32px;
+    font-family: YekanBakhHeavy;
+}
+
+#banner-text p:last-child {
+    font-size: 18px;
+    font-family: YekanBakhMedium;
+}
+
+#banner-img {
+    height: 450px;
+}
+
+.gold-btn {
+    background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0 no-repeat padding-box;
+    font-family: YekanBakhBold;
+    font-size: 16px;
+    margin: 17px 0 0 10px;
+    padding: 7px 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+.blue-btn {
+    background: #435a8a 0 0 no-repeat padding-box;
+    font-family: YekanBakhBold;
+    font-size: 14px;
+    margin: 17px 0 0 10px;
+    padding: 8px 14px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#scroll {
+    background: url(../images/arrowbottom.svg) center no-repeat;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+#scroll-arrow {
+    height: 20px;
+    padding-top: 20px;
+}
+
+/* boxes */
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.box-img {
+    width: 100%;
+    margin: 0 50px;
+}
+
+.box-text-btn {
+    margin: 0 80px;
+}
+
+.box-text {
+    border-bottom: 1px solid #dfe1e4;
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+
+.box-first-text {
+    color: #747480;
+    font-family: YekanBakhMedium;
+    font-size: 22px;
+}
+
+.box-second-text {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-size: 32px;
+}
+
+.box-third-text {
+    color: #303030;
+    font-family: YekanBakhMedium;
+    font-size: 16px;
+}
+
+.box-btns {
+    padding-top: 20px;
+}
+
+.glass-btn {
+    color: #284578;
+    font: 14px iranyekanwebmedium;
+    background-color: #E8EFFE99;
+    border: none;
+    border-radius: 10px;
+    margin-top: 17px;
+    padding: 4px 14px;
+}
+
+.glass-btn img {
+    position: relative;
+    top: 5px;
+}
+
+/* responsive */
+/* navbar */
+@media (min-width: 768px) and (max-width: 990px) {
+    #myzarinpal {
+        display: none;
+    }
+
+    #banner-img {
+        display: none;
+    }
+
+    .banner-btns,
+    #banner-text p {
+        text-align: center;
+    }
+
+    #banner {
+        height: 200px;
+        width: 80%;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    #hamburger {
+        display: inline;
+    }
+
+    #buttons {
+        display: none;
+    }
+}
+
+@media (max-width: 1148px) {
+    body {
+        margin: 0 100px;
+    }
+
+    #banner {
+        padding: 130px 70px 200px 85px;
+    }
+}

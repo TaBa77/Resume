@@ -1,0 +1,53 @@
+div {
+    text-align: center;
+    background-color: rgb(174, 219, 219);
+    border: 20px solid blueviolet;
+    margin: 100px;
+    padding: 10px;
+    display: block;
+    float: inherit;
+    border-radius: 20px;
+}
+
+.header {
+    font-size: 60px;
+}
+
+.order {
+    font-size: 30px;
+}
+
+.action {
+    height: 150px;
+    padding: 30px;
+}
+
+.action:hover {
+    height: 150px;
+    padding: 30px;
+    opacity: 50%;
+}
+
+.fight {
+    height: 200px;
+    padding: 30px;
+}
+
+.vs {
+    height: 80px;
+    padding: 30px;
+}
+
+table {
+    margin: auto;
+}
+
+.gamer {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#res {
+    font-size: 30px;
+    background-color: aliceblue;
+}

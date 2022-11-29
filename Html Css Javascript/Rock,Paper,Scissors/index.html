@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div>
+        <!-- header -->
+        <h1 class="header">Rock, Paper, Scissors</h1>
+        <a class="order">Choose your action!</a>
+        <br>
+        <!-- actions -->
+        <table>
+            <td>
+                <img type="button" class="action" src="data/rock.png" id="rock" onclick="gamer()">
+            </td>
+            <td>
+                <img type="button" class="action" src="data/paper.png" id="paper" onclick="gamer()">
+            </td>
+            <td>
+                <img type="button" class="action" src="data/scissors.png" id="scissors" onclick="gamer()">
+            </td>
+        </table>
+        <!-- fight ground -->
+        <table>
+            <tr>
+                <td>
+                    <img class="fight" src="data/start.png" id="you">
+                </td>
+                <td>
+                    <img type="button" class="vs" src="data/vs.png">
+                </td>
+                <td>
+                    <img class="fight" src="data/start.png" id="pc">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="gamer">YOU</a>
+                </td>
+                <td></td>
+                <td>
+                    <a class="gamer">PC</a>
+                </td>
+            </tr>
+        </table>
+        <!-- Score -->
+        <a class="order">Score Board</a>
+        <br>
+        <table>
+            <td>
+                <a class="gamer" id="yousc">0</a>
+            </td>
+            <td>---</td>
+            <td>
+                <a class="gamer" id="pcsc">0</a>
+            </td>
+            </tr>
+        </table>
+        <br>
+        <!-- Reset -->
+        <button id="res" onclick="reset()">Reset</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,477 @@
+@import url(./fonts.css);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./images/Background.png);
+    background-size: cover;
+    font-family: 'Byekan';
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-option {
+    color: white;
+    text-decoration: none;
+    font-size: 22.4px;
+    padding: 12px 32px;
+}
+
+.menu-option:hover {
+    color: #000080;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.login {
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    height: fit-content;
+}
+
+.login div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.login div img {
+    margin: 0 0 0 5px;
+}
+
+.login div label {
+    font-size: 20.8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+.login-menu {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 269px;
+    position: absolute;
+    top: 86px;
+    width: 80%;
+    z-index: 2;
+    left: 27px;
+    padding: 10px 0;
+}
+
+.show-login-menu {
+    display: block;
+}
+
+.login-menu div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-menu div:first-child {
+    border-bottom: 1px solid black;
+}
+
+.login-menu div b {
+    padding: 15px 0;
+}
+
+.login-menu-item {
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 7px 13px;
+}
+
+.login-menu-item:hover {
+    background-color: rgb(184, 184, 184);
+}
+
+.mobile-menu-box {
+    display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.header img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.1s;
+}
+
+.header h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    margin: 10px;
+}
+
+.header p {
+    color: #b5b5fd;
+    font-family: "arabic";
+    text-align: center;
+}
+
+.top-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 16px;
+    background: 50%;
+    padding: 20px 3rem;
+    width: 63%;
+    background-color: #080a82a1;
+}
+
+.header-label p {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.header-label p span {
+    color: red;
+}
+
+.top-main div {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-main-btn {
+    color: white;
+    background-color: #080a8261;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    font-family: "Byekan";
+}
+
+#top {
+    background-color: white;
+    height: 50px;
+    margin-top: -60px;
+    border-top: 50px solid white;
+    border-radius: 100% 100% 0 0;
+}
+
+main {
+    background-color: white;
+}
+
+.connection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 96%;
+}
+
+.connection-box {
+    border-radius: 22px;
+    box-shadow: 0 0 20px blue;
+    height: 314px;
+    margin: 14px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+}
+
+.connection-box h2 {
+    font-weight: 100;
+    margin-top: 35px;
+}
+
+.connection-box a {
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 113%;
+    font-weight: 600;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 88%;
+    background-color: white;
+    border: 1px solid #6998ee;
+    box-shadow: 0 0 7px 1px #6495ed63;
+    color: #595959;
+}
+
+.connection-first-p {
+    margin: 0 5px;
+    text-align: justify;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.connection-second-p {
+    font-size: 94%;
+    margin: 14px 5px 5px;
+    color: grey;
+    line-height: 130%;
+    text-align: justify;
+}
+
+.divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider h3 {
+    font-size: 25px;
+}
+
+.guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.guide-btn {
+    background-color: rgb(167, 167, 167);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.guide-btn:hover {
+    background-color: gray;
+}
+
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ___________________________ */
+.AllLoginContent {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin: 20px 0;
+    border: 2px solid red;
+}
+
+.LoginContentItem {
+    width: 130px;
+    height: 130px;
+    transform: rotate(45deg) scale(0.8);
+    position: absolute;
+    right: 107.5px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+    background: #FFF;
+    border-radius: 15px;
+}
+
+.LoginContentItem img {
+    cursor: pointer;
+    transform: rotate(-45deg);
+    width: 70px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.LoginContentItem span {
+    cursor: pointer;
+    transform: rotate(-45deg);
+    display: block;
+    margin-top: 13px;
+    font-size: 18px;
+}
+
+.LoginContentItemRight {
+    transform: rotate(45deg) scale(0.8);
+    right: 31px;
+    margin-top: 96px;
+}
+
+.LoginContentItemLeft {
+    transform: rotate(45deg) scale(0.8);
+    right: 185px;
+    margin-top: 97px;
+}
+
+.LoginContentItemBottom {
+    margin-top: 174px;
+    right: 108px;
+}
+
+.LoginContentItemBottom span {
+    margin-top: 13px;
+    margin-right: -9px;
+    font-size: 13px;
+}
+
+/* ___________________________ */
+
+.other-logins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-logins a {
+    padding: 10px;
+    margin: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #6998ee;
+    box-shadow: 0 0 7px 1px #6495ed63;
+    cursor: pointer;
+    color: #595959;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.other-logins a:hover {
+    background-color: #000080;
+    color: white;
+}
+
+@media (min-width:756px) and (max-width:1080px) {
+    .menu-option {
+        font-size: 16px;
+        padding: 12px 8px;
+    }
+
+    .login div label {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:756px) {
+    nav {
+        background: rgba(0, 0, 0, 0.61);
+        z-index: 2;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 10px;
+        z-index: 6;
+    }
+
+    .hamburger div {
+        background-color: white;
+        height: 5px;
+        margin: 6px 0;
+        transition: 0.4s;
+        width: 35px;
+    }
+
+    .login {
+        margin: 0 0 0 10px;
+        width: fit-content;
+    }
+
+    .login div {
+        padding: 2px 8px;
+    }
+
+    .login div label {
+        font-size: 16px;
+    }
+
+    .hamburger-anim-up {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .hamburger-anim-bet {
+        opacity: 0;
+    }
+
+    .hamburger-anim-down {
+        transform: rotate(+45deg) translate(-8px, -8px);
+    }
+
+    .mobile-menu-box {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 80%;
+        background-color: black;
+        margin-top: 690px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .show-mobile-menu {
+        display: flex;
+    }
+
+    .mobile-menu-box img {
+        width: 80vw;
+        margin-top: 50px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+
+    .mobile-menu-option {
+        color: white;
+        text-decoration: none;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+}
